@@ -1119,6 +1119,10 @@ public class YaVersion {
 
   public static final int TABLEARRANGEMENT_COMPONENT_VERSION = 1;
 
+  // For TAB_BAR_COMPONENT_VERSION 1
+  //  - Initial Version
+  public static final int TAB_BAR_COMPONENT_VERSION = 1;
+
   // For TEXTBOX_COMPONENT_VERSION 2:
   // - The TextBox.NumbersOnly property was added.
   // For TEXTBOX_COMPONENT_VERSION 3:

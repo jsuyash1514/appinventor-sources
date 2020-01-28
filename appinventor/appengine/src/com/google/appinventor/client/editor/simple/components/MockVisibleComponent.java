@@ -48,6 +48,10 @@ public abstract class MockVisibleComponent extends MockComponent {
   protected static final String PROPERTY_NAME_HEIGHT = "Height";
   protected static final String PROPERTY_NAME_COLUMN = "Column";
   protected static final String PROPERTY_NAME_ROW = "Row";
+  protected static final String PROPERTY_NAME_TAB_IDX = "CurrentTabIndex";
+  protected static final String PROPERTY_NAME_NUMBER_OF_TABS = "NumberOfTabs";
+  protected static final String PROPERTY_NAME_TAB_LABEL = "TabLabelsFromString";
+
 
   // Note: the values below are duplicated in Component.java
   // If you change them here, change them there!
@@ -83,6 +87,8 @@ public abstract class MockVisibleComponent extends MockComponent {
         new TextPropertyEditor());
     addProperty(PROPERTY_NAME_ROW, "" + ComponentConstants.DEFAULT_ROW_COLUMN, null,
         new TextPropertyEditor());
+    addProperty(PROPERTY_NAME_TAB_IDX, "" + ComponentConstants.DEFAULT_TAB, null,
+        new TextPropertyEditor());
     addWidthHeightProperties();
   }
 
@@ -96,7 +102,8 @@ public abstract class MockVisibleComponent extends MockComponent {
   @Override
   protected boolean isPropertyVisible(String propertyName) {
     if (propertyName.equals(PROPERTY_NAME_COLUMN) ||
-        propertyName.equals(PROPERTY_NAME_ROW)) {
+        propertyName.equals(PROPERTY_NAME_ROW) ||
+        propertyName.equals(PROPERTY_NAME_TAB_IDX)) {
       return false;
     }
     return super.isPropertyVisible(propertyName);

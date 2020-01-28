@@ -197,6 +197,12 @@ public interface Images extends Resources {
   ImageResource horizontal();
 
   /**
+   * Designer palette item: tab bar layout component
+   */
+  @Source("com/google/appinventor/images/tabbarlayout.png")
+  ImageResource tablayout();
+
+  /**
    * Designer palette item: image component
    * Also used for image file icon for project explorer
    */

@@ -32,6 +32,14 @@ public class ComponentConstants {
   public static final int EMPTY_HV_ARRANGEMENT_HEIGHT = 100;
 
   /**
+   * Tab bar layout constants
+   */
+  public static final int DEFAULT_TAB = -1;
+  public static final int TAB_PREFERRED_WIDTH = 100;
+  public static final int TAB_PREFERRED_HEIGHT = 40;
+
+
+  /**
    * Canvas component.
    */
   public static final int CANVAS_PREFERRED_WIDTH = 32;
