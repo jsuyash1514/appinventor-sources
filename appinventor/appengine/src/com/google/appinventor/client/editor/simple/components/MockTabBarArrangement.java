@@ -68,7 +68,7 @@ public final class MockTabBarArrangement extends MockContainer {
     }
 
     /*
-     * Sets the text to be added in the listview
+     * Sets the tab labels
      */
     private void setElementsFromStringProperty(String text) {
         currentTabLabels = text.split(",");
@@ -112,8 +112,13 @@ public final class MockTabBarArrangement extends MockContainer {
     private void setCurrentTabIndex(String newValue) {
         try {
             int currIdx = Integer.parseInt(newValue);
-            if (currIdx >= 0 && currIdx < currentTabLabels.length) {
+            if (currIdx >= 0 && currIdx < nTabs) {
                 currentTabIndex = currIdx;
+                tabViewWidget.clear();
+                for (int i = 0; i < nTabs; i++) {
+                    createLabelItem(i);
+                    createLabelPanel(i);
+                }
                 ((MockTabBarLayout) layout).setCurrentTabIdx(currIdx);
             }
         } catch (NumberFormatException e) {
@@ -126,6 +131,11 @@ public final class MockTabBarArrangement extends MockContainer {
             int numberOfTabs = Integer.parseInt(newValue);
             if (numberOfTabs >= 2) {
                 nTabs = numberOfTabs;
+                tabViewWidget.clear();
+                for (int i = 0; i < nTabs; i++) {
+                    createLabelItem(i);
+                    createLabelPanel(i);
+                }
                 ((MockTabBarLayout) layout).setNumberOfTabs(numberOfTabs);
             }
         } catch (NumberFormatException e) {
