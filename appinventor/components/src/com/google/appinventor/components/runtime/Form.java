@@ -43,15 +43,7 @@ import android.widget.ScrollView;
 
 import com.google.appinventor.common.version.AppInventorFeatures;
 
-import com.google.appinventor.components.annotations.DesignerComponent;
-import com.google.appinventor.components.annotations.DesignerProperty;
-import com.google.appinventor.components.annotations.IsColor;
-import com.google.appinventor.components.annotations.PropertyCategory;
-import com.google.appinventor.components.annotations.SimpleEvent;
-import com.google.appinventor.components.annotations.SimpleFunction;
-import com.google.appinventor.components.annotations.SimpleObject;
-import com.google.appinventor.components.annotations.SimpleProperty;
-import com.google.appinventor.components.annotations.UsesPermissions;
+import com.google.appinventor.components.annotations.*;
 import com.google.appinventor.components.common.ComponentCategory;
 import com.google.appinventor.components.common.ComponentConstants;
 import com.google.appinventor.components.common.PropertyTypeConstants;
@@ -120,6 +112,7 @@ import java.util.Set;
 @SimpleObject
 @UsesPermissions(permissionNames = "android.permission.INTERNET,android.permission.ACCESS_WIFI_STATE," +
     "android.permission.ACCESS_NETWORK_STATE")
+@UsesLibraries(value = {"androidx-appcompat.aar", "androidx-appcompat.jar"})
 public class Form extends AppInventorCompatActivity
   implements Component, ComponentContainer, HandlesEventDispatching,
   OnGlobalLayoutListener {
