@@ -1,3 +1,6 @@
+androidx-appcompat.aar
+androidx-cardview.aar
+androidx-recyclerview.aar
 animated-vector-drawable.aar
 appcompat-v7.aar
 asynclayoutinflater.aar
@@ -12,6 +15,7 @@ livedata.aar
 livedata-core.aar
 loader.aar
 localbroadcastmanager.aar
+material.aar
 print.aar
 runtime.aar
 slidingpanelayout.aar
@@ -24,3 +28,4 @@ swiperefreshlayout.aar
 versionedparcelable.aar
 viewmodel.aar
 viewpager.aar
+viewpager2.aar

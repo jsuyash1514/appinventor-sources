@@ -1,3 +1,6 @@
+androidx-appcompat.jar
+androidx-cardview.jar
+androidx-recyclerview.jar
 animated-vector-drawable.jar
 appcompat-v7.jar
 asynclayoutinflater.jar
@@ -16,6 +19,7 @@ livedata.jar
 livedata-core.jar
 loader.jar
 localbroadcastmanager.jar
+material.jar
 print.jar
 runtime.jar
 slidingpanelayout.jar
@@ -29,3 +33,4 @@ swiperefreshlayout.jar
 versionedparcelable.jar
 viewmodel.jar
 viewpager.jar
+viewpager2.jar
