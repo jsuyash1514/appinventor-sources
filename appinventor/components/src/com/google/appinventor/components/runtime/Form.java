@@ -112,7 +112,6 @@ import java.util.Set;
 @SimpleObject
 @UsesPermissions(permissionNames = "android.permission.INTERNET,android.permission.ACCESS_WIFI_STATE," +
     "android.permission.ACCESS_NETWORK_STATE")
-@UsesLibraries(value = {"androidx-appcompat.aar", "androidx-appcompat.jar"})
 public class Form extends AppInventorCompatActivity
   implements Component, ComponentContainer, HandlesEventDispatching,
   OnGlobalLayoutListener {

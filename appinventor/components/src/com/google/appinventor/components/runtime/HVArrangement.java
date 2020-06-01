@@ -50,7 +50,7 @@ public class HVArrangement<T extends ViewGroup> extends AndroidViewComponent<T> 
 
   // Layout
   private final int orientation;
-  private final LinearLayout viewLayout;
+  protected final LinearLayout viewLayout;
   protected T frameContainer;
   // translates App Inventor alignment codes to Android gravity
   private AlignmentUtil alignmentSetter;
